@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenue à nouveau"
-        android:textSize="26sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,15 +28,32 @@
         android:text="Bon retour, commencer par vous connecter pour continuer"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/titreLogin"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:textAlignment="center"
         android:gravity="center"
 
+
         />
 
-    <!-- Email -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Adresse Email"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+
+        android:textSize="15sp"
+
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/emailInput"
+        app:layout_constraintBottom_toTopOf="@id/emailInput"/>
+
+
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="0dp"
@@ -47,9 +64,30 @@
         app:layout_constraintTop_toBottomOf="@id/welcomeText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="100dp"
 
-    <!-- Password -->
+        android:background="@drawable/input_border"
+        />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Mot de passe"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+
+        android:textSize="15sp"
+
+
+
+        app:layout_constraintStart_toStartOf="@id/passwordInput"
+        app:layout_constraintBottom_toTopOf="@id/passwordInput"/>
+
+
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="0dp"
@@ -60,9 +98,15 @@
         app:layout_constraintTop_toBottomOf="@id/emailInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/input_border"
 
-    <!-- Forgot password -->
+
+        />
+
+
     <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
@@ -71,9 +115,12 @@
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/passwordInput"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        />
 
-    <!-- Login button -->
+
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
@@ -83,7 +130,12 @@
         app:layout_constraintTop_toBottomOf="@id/forgotPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#E36920"
+        android:textColor="#FFFFFF"
+        />
 
     <!-- Register -->
     <TextView
