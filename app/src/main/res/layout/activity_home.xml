@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon Blog nul"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E36920"
+
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Articles pour devenir un meilleur développeur"
+            android:textSize="14sp"
+            android:textColor="#666666"
+
+            android:layout_marginBottom="24dp" />
+
+        <!-- Article 1 : Comment apprendre le dev web -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comment apprendre le dev web"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Découvrez les meilleures pratiques et ressources pour débuter dans le développement web en 2024. De HTML/CSS aux frameworks modernes."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Sarah Martin"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 Nov 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Article 2 : Kotlin pour débutants -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin pour débutants"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un guide complet pour maîtriser les bases de Kotlin et créer votre première application Android. Syntaxe simple et moderne."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Ahmed Ben Ali"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 Nov 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Article 3 : La conteneurisation pour les Nuls -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La conteneurisation pour les Nuls"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Docker et Kubernetes expliqués simplement avec des exemples pratiques pour bien démarrer. Conteneurs, images et orchestration."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Marc Dubois"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Nov 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Article 4 : Comment déployer un service web -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comment déployer un service web"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guide étape par étape pour déployer votre application web sur un serveur en production. Configuration, sécurité et monitoring."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Leila Mansour"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Nov 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Article 5 : Pourquoi le clean code est important -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pourquoi le clean code est important"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comprendre l'importance d'écrire du code propre et maintenable pour votre carrière de développeur. Bonnes pratiques et conventions."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Thomas Laurent"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28 Oct 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".signUp">
 
-    <!-- Titre -->
     <TextView
         android:id="@+id/titreRegister"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="60dp"/>
 
-    <!-- Sous-titre -->
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -34,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Bouton Google -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/googleButton"
         android:layout_width="0dp"
@@ -76,7 +74,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Divider -->
     <TextView
         android:id="@+id/dividerText"
         android:layout_width="wrap_content"
@@ -88,7 +85,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Nom -->
     <TextView
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
@@ -114,7 +110,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"/>
 
-    <!-- Prénom -->
     <TextView
         android:id="@+id/firstNameLabel"
         android:layout_width="wrap_content"
@@ -140,7 +135,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"/>
 
-    <!-- Email -->
+
     <TextView
         android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
@@ -192,7 +187,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"/>
 
-    <!-- Mot de passe -->
+
     <TextView
         android:id="@+id/passwordLabel"
         android:layout_width="wrap_content"

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AsfourApp">
         <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
             android:name=".signUp"
             android:exported="true" />
         <activity
