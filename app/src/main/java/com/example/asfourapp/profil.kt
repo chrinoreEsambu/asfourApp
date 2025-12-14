@@ -3,35 +3,25 @@ package com.example.asfourapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class home : AppCompatActivity() {
+class profil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_profil)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val gotodetail = findViewById<CardView>(R.id.detailCard)
-        gotodetail.setOnClickListener {
-            val intent = Intent(this, blogDetail::class.java)
-            startActivity(intent)
-        }
-
-
-        val gotoprofil = findViewById<Button>(R.id.profilButton)
-        gotoprofil.setOnClickListener {
-            val intent = Intent(this, profil::class.java)
+        val backtohome = findViewById<Button>(R.id.backButton)
+        backtohome.setOnClickListener {
+            val intent = Intent(this, home::class.java)
             startActivity(intent)
         }
     }

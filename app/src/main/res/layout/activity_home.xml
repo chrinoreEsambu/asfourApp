@@ -15,8 +15,8 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
         <TextView
+            android:id="@+id/myblogtitre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mon Blog nul"
@@ -35,7 +35,97 @@
 
             android:layout_marginBottom="24dp" />
 
-        <!-- Article 1 : Comment apprendre le dev web -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/profilButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#E36920"/>
+        </LinearLayout>
+
+        <!--ref/conteneurisation pour les Nuls -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detailCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La conteneurisation pour les Nuls"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Docker et Kubernetes expliqués simplement avec des exemples pratiques pour bien démarrer. Conteneurs, images et orchestration."
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Par Marc Dubois"
+                        android:textSize="12sp"
+                        android:textColor="#E36920"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Nov 2024"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 min"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:drawableStart="@android:drawable/ic_menu_recent_history"
+                        android:drawablePadding="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ref/omment apprendre le dev web -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,7 +198,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Article 2 : Kotlin pour débutants -->
+        <!-- ref/le debut de Kotlin pour débutants -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,81 +271,11 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Article 3 : La conteneurisation pour les Nuls -->
+
+
+        <!-- ref/comment déployer un service web -->
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="La conteneurisation pour les Nuls"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#212121"
-                    android:layout_marginBottom="8dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Docker et Kubernetes expliqués simplement avec des exemples pratiques pour bien démarrer. Conteneurs, images et orchestration."
-                    android:textSize="14sp"
-                    android:textColor="#666666"
-                    android:lineSpacingExtra="2dp"
-                    android:layout_marginBottom="12dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#E0E0E0"
-                    android:layout_marginBottom="12dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Par Marc Dubois"
-                        android:textSize="12sp"
-                        android:textColor="#E36920"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5 Nov 2024"
-                        android:textSize="12sp"
-                        android:textColor="#999999"
-                        android:layout_marginEnd="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10 min"
-                        android:textSize="12sp"
-                        android:textColor="#999999"
-                        android:drawableStart="@android:drawable/ic_menu_recent_history"
-                        android:drawablePadding="4dp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Article 4 : Comment déployer un service web -->
-        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -327,7 +347,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Article 5 : Pourquoi le clean code est important -->
+        <!-- ref/Pourquoi le clean code est important -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

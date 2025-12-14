@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".blogDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header avec image hero -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@android:drawable/screen_background_dark">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E36920"
+                    android:alpha="0.9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="🐳"
+                    android:textSize="80sp"
+                    android:gravity="center"
+                    android:alpha="0.3" />
+
+            </RelativeLayout>
+
+            <!-- Contenu principal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="-40dp">
+
+                <!-- Card du titre -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La conteneurisation pour les Nuls"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- Info auteur et date -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Par Marc Dubois"
+                                android:textSize="14sp"
+                                android:textColor="#E36920"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5 Nov 2024"
+                                android:textSize="13sp"
+                                android:textColor="#999999"
+                                android:layout_marginEnd="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 min"
+                                android:textSize="13sp"
+                                android:textColor="#999999"
+                                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                                android:drawablePadding="4dp" />
+                        </LinearLayout>
+
+                        <!-- Tags -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Docker"
+                                android:textSize="11sp"
+                                android:textColor="#E36920"
+                                android:background="#FFF3E0"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingTop="6dp"
+                                android:paddingBottom="6dp"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kubernetes"
+                                android:textSize="11sp"
+                                android:textColor="#E36920"
+                                android:background="#FFF3E0"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingTop="6dp"
+                                android:paddingBottom="6dp"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DevOps"
+                                android:textSize="11sp"
+                                android:textColor="#E36920"
+                                android:background="#FFF3E0"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:paddingTop="6dp"
+                                android:paddingBottom="6dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Introduction -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La conteneurisation est devenue incontournable dans le monde du développement moderne. Si vous entendez parler de Docker et Kubernetes sans vraiment comprendre de quoi il s'agit, cet article est fait pour vous !"
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Section 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Qu'est-ce qu'un conteneur ?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un conteneur est comme une boîte légère qui contient tout ce dont votre application a besoin pour fonctionner : le code, les bibliothèques, les dépendances et la configuration. Contrairement aux machines virtuelles qui émulent un système d'exploitation complet, les conteneurs partagent le noyau du système hôte, ce qui les rend beaucoup plus légers et rapides à démarrer."
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Card exemple -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="#E3F2FD">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="💡 Analogie : Imaginez un conteneur comme un food truck. Il contient tout ce qu'il faut pour préparer et servir un plat spécifique, et peut être déplacé facilement d'un endroit à un autre."
+                        android:textSize="15sp"
+                        android:textColor="#1565C0"
+                        android:lineSpacingExtra="4dp"
+                        android:padding="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Section 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Docker : Le roi des conteneurs"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Docker est la plateforme de conteneurisation la plus populaire. Elle permet de créer, déployer et exécuter des applications dans des conteneurs. Les principaux avantages :"
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Portabilité : Votre application fonctionne partout de la même façon\n\n• Isolation : Chaque conteneur est isolé des autres\n\n• Légèreté : Démarrage en quelques secondes\n\n• Reproductibilité : L'environnement est toujours identique"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:paddingStart="8dp" />
+
+                <!-- Section 3 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kubernetes : L'orchestrateur"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quand vous avez des dizaines ou des centaines de conteneurs à gérer, Kubernetes entre en jeu. C'est un système d'orchestration qui automatise le déploiement, la mise à l'échelle et la gestion des applications conteneurisées. Il s'assure que vos conteneurs fonctionnent correctement, les redémarre en cas de problème, et répartit la charge entre eux."
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Section 4 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Par où commencer ?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Installez Docker Desktop sur votre machine\n\n2. Créez votre premier Dockerfile pour conteneuriser une application simple\n\n3. Apprenez les commandes de base : docker build, docker run, docker ps\n\n4. Une fois à l'aise avec Docker, explorez Kubernetes avec Minikube"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:paddingStart="8dp" />
+
+                <!-- Conclusion -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#F1F8E9"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="✨ Conclusion"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#558B2F"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="La conteneurisation n'est pas aussi compliquée qu'elle en a l'air. Commencez petit, expérimentez avec Docker, et vous verrez rapidement les avantages pour vos projets !"
+                            android:textSize="15sp"
+                            android:textColor="#558B2F"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
