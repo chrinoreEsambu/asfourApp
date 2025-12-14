@@ -42,7 +42,7 @@
         android:id="@+id/profileRole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Junior Android Developer"
+        android:text="Junior web Developer +2"
         android:textSize="14sp"
         android:textColor="#777777"
         app:layout_constraintTop_toBottomOf="@id/profileName"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Carte infos -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/infoCard"
         android:layout_width="0dp"
@@ -78,7 +78,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="chrinore@email.com"
+                android:text="chrinoren@email.com"
                 android:textColor="#444444"
                 android:layout_marginBottom="12dp"/>
 
@@ -106,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kotlin • Android • Git"
+                android:text="Vuejs • nodejs • Git"
                 android:textColor="#444444"/>
 
         </LinearLayout>
